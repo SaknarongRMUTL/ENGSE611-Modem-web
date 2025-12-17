@@ -86,14 +86,25 @@
         <hr>
         <section>
             <h2><mark>ช่องทางติดต่อ</mark></h2>
-            <h3>ส่งข้อความถึงฉัน</h3>
-            <form action="#" method="POST">
-                <label for="visitor_name">ชื่อของคุณ:</label><br>
-                <input type="text" id="visitor_name" name="fullname" required><br><br> <label for="visitor_email">อีเมล:</label><br>
-                <input type="email" id="visitor_email" name="email_address" required><br><br> <label for="visitor_message">ข้อความ:</label><br>
-                <textarea id="visitor_message" name="user_message" rows="4" required></textarea><br><br> <button type="submit">ส่ง</button>
-            </form>
-
+            <label>ต้องการ</label>
+            <select name="province">
+                <option>ส่งข้อความถึงฉัน<br>
+                    <form action="#" method="POST">
+                        <label for="visitor_name">ชื่อของคุณ:</label><br>
+                        <input type="text" id="visitor_name" name="fullname" required><br><br> <label for="visitor_email">อีเมล:</label><br>
+                        <input type="email" id="visitor_email" name="email_address" required><br><br> <label for="visitor_message">ข้อความ:</label><br>
+                        <textarea id="visitor_message" name="user_message" rows="4" required></textarea><br><br> <button type="submit">ส่ง</button>
+                    </form>
+                </option>
+                <option>ให้คำแนะนำแก่ฉัน<br>
+                    <form action="#" method="POST">
+                        <label for="visitor_name">ชื่อของคุณ:</label><br>
+                        <input type="text" id="visitor_name" name="fullname" required><br><br> <label for="visitor_email">อีเมล:</label><br>
+                        <input type="email" id="visitor_email" name="email_address" required><br><br> <label for="visitor_message">ข้อความ:</label><br>
+                        <textarea id="visitor_message" name="user_message" rows="4" required></textarea><br><br> <button type="submit">ส่ง</button>
+                    </form>
+                </option>
+            </select>
             <h3><mark>Social Media:</mark></h3>
             <p>
                 <a href="https://www.facebook.com/saknarongnamnon/" target="_blank">Facebook</a> |
