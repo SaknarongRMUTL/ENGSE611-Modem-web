@@ -6,6 +6,7 @@
     <title>เว็บไซต์แนะนําตัวเอง</title>
 </head>
 <body>
+    <!--ส่วนนี้คือส่วนหัวบนสุด-->
     <header>
         <h1>
             สวัสดีครับ
@@ -13,6 +14,7 @@
             ผมชื่อนายศักดิ์ณรงค์ นำนนท์
         </h1>
     </header>
+    <!--ส่วนนี้จะมีพวกข้อมูลส่วนตัว , รูปภาพ , ตารางเรียน และ ช่องทางติดต่อ-->
     <main>
         <section>
             <h2><mark>ข้อมูลส่วนตัวและการศึกษา</mark></h2> 
@@ -35,9 +37,7 @@
                 <li>C</li>
             </ul>
         </section>
-
         <hr>
-
         <section>
             <h2><mark>ตารางเรียน/กิจกรรม</mark></h2>
             <table border="2" cellspacing="1" cellpadding="10" width="100%" >
@@ -86,25 +86,18 @@
         <hr>
         <section>
             <h2><mark>ช่องทางติดต่อ</mark></h2>
-            <label>ต้องการ</label>
+            <label>ต้องการ</label><br>
             <select name="province">
-                <option>ส่งข้อความถึงฉัน<br>
-                    <form action="#" method="POST">
-                        <label for="visitor_name">ชื่อของคุณ:</label><br>
-                        <input type="text" id="visitor_name" name="fullname" required><br><br> <label for="visitor_email">อีเมล:</label><br>
-                        <input type="email" id="visitor_email" name="email_address" required><br><br> <label for="visitor_message">ข้อความ:</label><br>
-                        <textarea id="visitor_message" name="user_message" rows="4" required></textarea><br><br> <button type="submit">ส่ง</button>
-                    </form>
-                </option>
-                <option>ให้คำแนะนำแก่ฉัน<br>
-                    <form action="#" method="POST">
-                        <label for="visitor_name">ชื่อของคุณ:</label><br>
-                        <input type="text" id="visitor_name" name="fullname" required><br><br> <label for="visitor_email">อีเมล:</label><br>
-                        <input type="email" id="visitor_email" name="email_address" required><br><br> <label for="visitor_message">ข้อความ:</label><br>
-                        <textarea id="visitor_message" name="user_message" rows="4" required></textarea><br><br> <button type="submit">ส่ง</button>
-                    </form>
-                </option>
+                <option help="1">ส่งข้อความถึงฉัน</option>
+                <option help="2">ให้คำแนะนำแก่ฉัน</option>
             </select>
+            <form>
+                <input type="text" name="firstname" placeholder="ชื่อ"> <br>
+                <input type="text" name="gmail" placeholder="อีเมล"> <br>
+                <input type="text" name="doc" placeholder="ข้อความ" style="width: 50%;"> <br>
+                <button type="submit">ส่ง</button>
+            </form>
+            
             <h3><mark>Social Media:</mark></h3>
             <p>
                 <a href="https://www.facebook.com/saknarongnamnon/" target="_blank">Facebook</a> |
@@ -113,6 +106,7 @@
         </section>
 
     </main>
+    <!--ส่วนนี้คือปิดท้ายไว้บอกว่าใครเป็นผู้จัดทำและวิชาอะไร-->
     <footer>
         <p>จัดทำโดย นายศักดิ์ณรงค์ นำนนท์ | ENGSE611-Modern Web Technology Development</p>
     </footer>
