@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: green;
+        }
+        .highlight{
+            background: yellow;
+            padding: 5px;
+        }
+        #header{
+            background: blue;
+            color: white;
+            padding: 10px;
+        }
+        p:hover{
+            color: red;
+            background-color: #ffe5e5;
+            cursor: pointer;
+        }
+        input[type="text"]{
+            border: 2px solid blue;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        input[type="text"]:focus{
+            border-color: rgb(255, 0, 128);
+            outline: none;
+            background-color: #fff0fa;
+        }
+
+        body{
+            font-family: Serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Parent ที่ควบคุมฟอนต์ทั้งหมด */
+        .parent {
+            font-size: 16px; /* ค่าเริ่มต้น */
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Child ใช้ em → เปลี่ยนตาม parent */
+        .child-title {
+            font-size: 2em;   /* 2 × parent */
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        .child-text {
+            font-size: 1.2em; /* 1.2 × parent */
+            color: #2c3e50;
+        }
+
+        /* ตัวอย่างที่ใช้ px → ไม่ยืดหยุ่น */
+        .fixed-text {
+            font-size: 18px;
+            color: #2980b9;
+        }
+
+        h1 {
+            fount-size: 40px;
+            text-shadow: 5px 5px 5px #FF0000;
+        }
+        p {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            word-wrap: break-word;
+        }
+
+        .box-color {
+            width: 300px;
+            height: 120px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .box-image {
+            width: 300px;
+            height: 300px;
+            background-image: url('image/rmutl.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px solid #333;
+        }
+        .box-short {
+            width: 300px;
+            height: 300px;
+            background: url('image/rmutl.jpg')no-repeat center/cover;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>ตัวอย่าง css Selectors</h1>
+    <p>
+        ข้อความนี้ถูกจัดสีด้วย Element Selector(p{color: green;})
+    </p>
+    <p class="highlight">
+        ข้อความนี้ถูกจัดสไตล์ Class Selector(.highlight)
+    </p>
+    <div id="header">
+        นี่คือพื้นที่ Header (ID Selector)
+    </div>
+    <h2>Pseudo-class :hover</h2>
+    <p>
+        นำเมาส์ไปวางบนข้อความนี้เพื่อดูเอฟเฟกต์
+    </p>
+    <h2>Attribute Selector [type="text"]</h2>
+    <input type="text" placeholder="พิมพ์ข้อความที่นี่">
+
+    <hr>
+    <h2>สาธิต Font-size: Parent → Child (em)</h2>
+
+    <form id="fontForm">
+        <label>ใส่ขนาดฟอนต์ Parent (px): </label>
+        <input type="number" id="fontSizeInput" value="16" min="10" max="40">
+        <button type="submit">ปรับขนาดฟอนต์</button>
+    </form>
+
+    <div class="parent" id="parentBox">
+        <p class="child-title">หัวข้อหลัก (2em)</p>
+        <p class="child-text">ข้อความย่อย (1.2em) → เปลี่ยนตาม Parent</p>
+        <p class="fixed-text">ข้อความแบบ px (18px) → ไม่เปลี่ยน</p>
+    </div>
+
+    <script>
+        document.getElementById("fontForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const newSize = document.getElementById("fontSizeInput").value;
+            document.getElementById("parentBox").style.fontSize = newSize + "px";
+        });
+    </script>
+
+    <hr>
+    <h2>Text Properties</h2>
+    <p class="align-left">ข้อความนี้ชิดซ้าย</p>
+    <p class="underline">ข้อความนี้มีเส้นใต้</p>
+    <p class="line-height-normal">ข้อความนี้มีระยะห่างบรรทัดปกติ</p>
+    <p class="line-height-24px">ข้อความนี้มีระยะห่างบรรทัด 24px</p>
+</body>
+</html>
