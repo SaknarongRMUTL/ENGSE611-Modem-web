@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์แนะนําตัวเอง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--ส่วนนี้คือส่วนหัวบนสุด-->
+    <header>
+        <h1>
+            สวัสดีครับ
+            <br>
+            ผมชื่อนายศักดิ์ณรงค์ นำนนท์
+        </h1>
+    </header>
+    <hr>
+    <!--ส่วนนี้จะมีพวกข้อมูลส่วนตัว , รูปภาพ , ตารางเรียน และ ช่องทางติดต่อ-->
+    <main>
+        <section>
+            <h2 class="highlight">ข้อมูลส่วนตัวและการศึกษา</h2> 
+            <div id="Image"></div>
+            <p>
+                ปัจจุบันกำลังศึกษาอยู่ที่ มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนาเชียงใหม่
+                <br>
+                สาขาวิศวกรรมซอฟต์แวร์ คณะวิศวกรรมศาสตร์
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h3 class="highlight">กำลังศึกษาทักษะด้านโปรแกรมมิ่ง</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>JavaScript</li>
+                <li>Python (พื้นฐาน)</li>
+                <li>C</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2 class="highlight">ตารางเรียน/กิจกรรม</h2>
+            <table>
+                <tr>
+                    <th>วัน/เวลา</th>
+                    <th>8:00 - 9:00</th>
+                    <th>9:00 - 10:00</th>
+                    <th>10:00 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>12:00 - 13:00</th>
+                    <th>13:00 - 14:00</th>
+                    <th>14:00 - 15:00</th>
+                    <th>15:00 - 16:00</th>
+                    <th>16:00 - 17:00</th>
+                    <th>17:00 - 18:00</th>
+                    <th>18:00 - 19:00</th>
+                </tr>
+                <tr>
+                    <td>จันทร์</td>
+                    <td class="invisible"></td>
+                    <td colspan="3">ENGSE101-Discrete Mathematics</td>
+                    <tr>
+                    <td>อังคาร</td>
+                    <td colspan="5">ENGSE216-Data Structures and Algorithms</td> 
+                    <td class="invisible"></td>
+                    <td colspan="5">ENGSE503-Digital Image Processing and Computer Vision</td>
+                </tr>
+                <tr>
+                    <td>พุธ</td>
+                    <td colspan="5">ENGSE611-Modern Web Technology Development</td> 
+                </tr>
+                <tr>
+                    <td>พฤหัสบดี</td>
+                    <td colspan="5">ENGSE205-Software Process and Quality Assurance </td> 
+                    <td class="invisible"></td>
+                    <td colspan="5">ENGSE204-Object Oriented Programming</td>
+                </tr>
+                <tr>
+                    <td>ศุกร์</td>
+                    <td colspan="6" class="invisible"></td> 
+                    <td colspan="5">ENGSE202-Operating System and Server Configure</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2 class="highlight">ช่องทางติดต่อ</h2>
+            <select name="help">
+                <option help="1">ส่งข้อความถึงฉัน</option>
+                <option help="2">ให้คำแนะนำแก่ฉัน</option>
+            </select>
+            <form>
+                <input type="text" name="firstname" placeholder="ชื่อ"> <br>
+                <input type="text" name="gmail" placeholder="อีเมล"> <br>
+                <input type="textdoc" name="doc" placeholder="ข้อความ" style="width: 50%;"> <br>
+                <button type="submit">ส่ง</button>
+            </form>
+        </section>
+    </main>
+    <!--ส่วนนี้คือปิดท้ายไว้บอกว่าใครเป็นผู้จัดทำและวิชาอะไร-->
+    <footer>
+        <h3 class="highlight">Social Media</h3>
+        <p>
+            <a href="https://www.facebook.com/saknarongnamnon/" target="_blank">Facebook</a> |
+            <a href="https://github.com/SaknarongRMUTL/ENGSE611-Modem-web" target="_blank">GitHub</a>
+        </p>
+        <p>จัดทำโดย นายศักดิ์ณรงค์ นำนนท์ | ENGSE611-Modern Web Technology Development</p>
+    </footer>
+</body>
+</html>

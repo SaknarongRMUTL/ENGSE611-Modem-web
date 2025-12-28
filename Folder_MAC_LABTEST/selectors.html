@@ -70,12 +70,7 @@
             fount-size: 40px;
             text-shadow: 5px 5px 5px #FF0000;
         }
-        p {
-            width: 300px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            word-wrap: break-word;
-        }
+        
 
         .box-color {
             width: 300px;
@@ -86,7 +81,7 @@
         .box-image {
             width: 300px;
             height: 300px;
-            background-image: url('image/rmutl.jpg');
+            background-image: url('image/20181114112806_98990.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -95,8 +90,14 @@
         .box-short {
             width: 300px;
             height: 300px;
-            background: url('image/rmutl.jpg')no-repeat center/cover;
+            background: url('image/20181114112806_98990.png')no-repeat center/cover;
             border: 2px solid black;
+        }
+        .align-left {
+            text-align: left;
+        }
+        .underline {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -147,5 +148,15 @@
     <p class="underline">ข้อความนี้มีเส้นใต้</p>
     <p class="line-height-normal">ข้อความนี้มีระยะห่างบรรทัดปกติ</p>
     <p class="line-height-24px">ข้อความนี้มีระยะห่างบรรทัด 24px</p>
+    <hr>
+    <h2>Box Properties</h2>
+    <div class="box-color">
+        กล่องนี้มีพื้นหลังสีเทาอ่อน
+    </div>
+    <br>
+    <div class="box-image"></div>
+    <br>
+    <div class="box-short"></div>
+
 </body>
 </html>
