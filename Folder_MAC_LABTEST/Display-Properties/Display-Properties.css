@@ -1,0 +1,17 @@
+.box {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #a0d8ff;
+    border: 2px solid #0077aa;
+    font-size: 20px;
+  }
+
+  /* ซ่อนแบบหายไปจาก layout */
+  .none {
+    display: none;
+  }
+
+  /* ซ่อนแต่ยังจองพื้นที่อยู่ */
+  .hidden {
+    visibility: hidden;
+  }
