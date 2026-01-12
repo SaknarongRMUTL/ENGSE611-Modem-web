@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 75%; 
+            min-height: 400px; 
+        }
+        .menu {
+            background-color: #2b78e4;
+            color: white;
+            padding: 20px;
+            
+        }
+        .content {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 40px;
+        }
+        @media screen and (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 100%; 
+            }
+        }      
+    </style>
+</head>
+<body>
+    <h2>โจทย์ที่ 2: 2-Column Layout ด้วย CSS Grid</h2>
+    <div class="grid-container">      
+        <div class="menu">
+            <h3>เมนู</h3>
+            <h4>About</h4>
+            <h4>Services</h4>
+            <h4>Contact</h4>
+        </div>
+        <div class="content">
+            <h1>ยินดีต้อนรับ</h1>
+            <p>นี่คือเนื้อหาหลักของเว็บไซต์</p>
+            <p>ลองทดสอบย่อ-ขยายหน้าจอเพื่อดู Responsive Layout</p>
+        </div>
+    </div>
+</body>
+</html>

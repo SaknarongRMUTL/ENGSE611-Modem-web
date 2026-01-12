@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    
+        .Background_Box{            
+            background: #f4f4f4;    
+            padding: 40px;         
+        }
+        .Setting_Box{
+            display: flex;
+            flex-direction: row;    
+            gap: 20px; 
+        }
+        .Item_Box{
+            background: white;
+            color: black;
+            width: 280px;
+            text-align: left;
+            padding: 30px;
+            border-radius: 20px; 
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+        }
+        .Item_Box:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Background_Box">
+        <h3>โจทย์ที่ 1: Card Layout ด้วย Flexbox</h3>
+        <div class="Setting_Box" style="justify-content: center;">
+            <div class="Item_Box">
+                <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+                    Card 1
+                </div>
+                <div style="font-size: 15px; color: #555;">
+                    คำอธิบายเนื้อหาของการ์ดใบแรก
+                </div>
+            </div>
+
+            <div class="Item_Box">
+                <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+                    Card 2
+                </div>
+                <div style="font-size: 15px; color: #555;">
+                    คำอธิบายเนื้อหาของการ์ดใบสอง
+                </div>
+            </div>
+
+            <div class="Item_Box">
+                <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+                    Card 3
+                </div>
+                <div style="font-size: 15px; color: #555;">
+                    คำอธิบายเนื้อหาของการ์ดใบสาม
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
