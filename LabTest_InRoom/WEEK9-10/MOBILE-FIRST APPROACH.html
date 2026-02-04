@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        nav a{
+            background: #34495e;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        main{
+            padding: 15px;
+        }
+        .card{
+            background: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer{
+            background: #dddddd;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        @media (min-width: 768px){
+            header{
+                text-align: left;
+                padding: 20px;
+            }
+            nav{
+                flex-direction: row;
+            }
+            main{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+        }
+        @media (min-width: 1024px){
+            body{
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            header{
+                padding: 30px 40px;
+            }
+            main{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }  
+        img{
+            max-width: 100%;
+            height: auto;
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile-First Approach</h1>
+        <p>เริ่มออกแบบจากมือถือ แล้วค่อยขยายไปยังหน้าจอใหญ่</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h3>แนวคิด Mobile-First</h3>
+            <p>
+                เริ่มจากออกแบบ
+            </p>
+        </div>
+        <div class="card">
+            <h3>ข้อดี</h3>
+            <ul>
+                <li>โหลดเร็ว</li>
+                <li>ใช้งานง่าย</li>
+                <li>เหมาะกับผู้ใช้ส่วนใหญ่</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        รายวิชา ENGSE611s
+    </footer>
+    <img src="https://e-cms.rmutl.ac.th/assets/upload/files/2018/11/20181114112806_98990.png" alt="img">
+</body>
+</html>
