@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: rgb(31, 96, 170);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+        #blackground {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 100px;
+            border-left: 5px solid #00c853;
+            margin-top: 0;
+        }
+        select {
+            padding: 5px 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="SubmitNum()">Run Code</button>
+    <select id ="Input">
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </select>
+    <pre id="blackground">ผลลัพธ์จะแสดงที่นี่…</pre>
+    <script>
+        function SubmitNum(){
+            let maxNumber = Number(document.getElementById("Input").value);
+            const output = [];
+            for (let i = 0; i <= maxNumber; i++){
+                if (i % 2 == 0){
+                    console.log(i , " (คู่)");
+                    output.push(i + " (คู่)");
+                } else {
+                    console.log(i , " (คี่)");
+                    output.push(i + " (คี่)");
+                }
+            }
+            for (let i = 0; i <= maxNumber; i+=2){
+                console.log("นับทีละ 2:", i);
+                output.push("นับทีละ 2:"+ i);
+            }
+            for (let i = maxNumber; i >= 0; i--){
+                console.log("ถอยหลัง:", i);
+                output.push("ถอยหลัง:"+ i);
+            }
+            document.getElementById("blackground").textContent = output.join("\n");
+        }
+    </script>
+</body>
+</html>
